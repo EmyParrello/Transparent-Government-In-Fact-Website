@@ -6,7 +6,7 @@ var fileName = window.location.pathname;
 var members;
 if (fileName == "index.html") {
     readMore(dotsP, moreP, btnP);
-} else if (fileName == "/senate-data.html" || fileName == "/senate-attendance.html" || fileName == "/senate-party-loyalty.html") {
+} else if (fileName == "senate-data.html" || fileName == "/senate-attendance.html" || fileName == "/senate-party-loyalty.html") {
     var url = "https://api.propublica.org/congress/v1/113/senate/members.json";
     startFetch(url);
 } else if (fileName == "/house-data.html" || fileName == "/house-attendance.html" || fileName == "/house-party-loyalty.html") {
