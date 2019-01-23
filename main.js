@@ -2,8 +2,10 @@
 /* eslint "no-console": "off"  */
 /* global$ */
 
+
 //Delete "/Transparent-Government-In-Fact-Website" from the pathname (fileName) to open the project in local host and get
 //the fetch response successfully. Only file name and extension needed ("/senate-data.html", "/house-data.html"...).
+
 
 var fileName = window.location.pathname;
 var members;
