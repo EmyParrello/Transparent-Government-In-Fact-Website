@@ -6,10 +6,10 @@ var fileName = window.location.pathname;
 var members;
 if (fileName == "index.html") {
     readMore(dotsP, moreP, btnP);
-} else if (fileName == "senate-data.html" || fileName == "/senate-attendance.html" || fileName == "/senate-party-loyalty.html") {
+} else if (fileName == "/Transparent-Government-In-Fact-Website/senate-data.html" || fileName == "/Transparent-Government-In-Fact-Website/senate-attendance.html" || fileName == "/Transparent-Government-In-Fact-Website/senate-party-loyalty.html") {
     var url = "https://api.propublica.org/congress/v1/113/senate/members.json";
     startFetch(url);
-} else if (fileName == "/house-data.html" || fileName == "/house-attendance.html" || fileName == "/house-party-loyalty.html") {
+} else if (fileName == "/Transparent-Government-In-Fact-Website/house-data.html" || fileName == "/Transparent-Government-In-Fact-Website/house-attendance.html" || fileName == "/Transparent-Government-In-Fact-Website/house-party-loyalty.html") {
     var url = "https://api.propublica.org/congress/v1/113/house/members.json";
     startFetch(url);
 }
@@ -71,14 +71,14 @@ function readMore(dotsP, moreP, btnP) {
 
 function init() {
     //Congress 113
-    if (fileName == "/senate-data.html" || fileName == "/house-data.html") {
+    if (fileName == "/Transparent-Government-In-Fact-Website/senate-data.html" || fileName == "/Transparent-Government-In-Fact-Website/house-data.html") {
         setEventListeners();
         createOptions();
         createTable("members-data", members);
     }
 
     //Attendance, Party Loyalty
-    else if (fileName == "/senate-attendance.html" || fileName == "/house-attendance.html" || fileName == "/senate-party-loyalty.html" || fileName == "/house-party-loyalty.html") {
+    else if (fileName == "/Transparent-Government-In-Fact-Website/senate-attendance.html" || fileName == "/Transparent-Government-In-Fact-Website/house-attendance.html" || fileName == "/Transparent-Government-In-Fact-Website/senate-party-loyalty.html" || fileName == "/Transparent-Government-In-Fact-Website/house-party-loyalty.html") {
         numberMembers();
 
         var statistics = {
@@ -108,12 +108,12 @@ function init() {
 
     // dinamic tables
     //attendance
-    if (fileName == "/senate-attendance.html" || fileName == "/house-attendance.html") {
+    if (fileName == "/Transparent-Government-In-Fact-Website/senate-attendance.html" || fileName == "/Transparent-Government-In-Fact-Website/house-attendance.html") {
         statisticsTables(statistics.least_engaged, "least-engaged", "missed_votes", "missed_votes_pct");
         statisticsTables(statistics.most_engaged, "most-engaged", "missed_votes", "missed_votes_pct");
     }
     //party loyalty
-    else if (fileName == "/senate-party-loyalty.html" || fileName == "/house-party-loyalty.html") {
+    else if (fileName == "/Transparent-Government-In-Fact-Website/senate-party-loyalty.html" || fileName == "/Transparent-Government-In-Fact-Website/house-party-loyalty.html") {
         statisticsTables(statistics.least_loyal, "least-loyal", "total_votes", "votes_with_party_pct");
         statisticsTables(statistics.most_loyal, "most-loyal", "total_votes", "votes_with_party_pct");
     }
