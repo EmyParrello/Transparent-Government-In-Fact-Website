@@ -1,0 +1,146 @@
+/* --- header --- */
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 101.1%;
+    height: 120px;
+    justify-content: flex-start;
+    background-image: linear-gradient(to left, rgba(0, 142, 165, 0.75), rgba(0, 142, 165, 0.5), rgba(0, 142, 165, 0.25), rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25));
+}
+
+h1 {
+    width: 80%;
+    margin-left: 10px;
+}
+
+.logo {
+    height: 75%;
+    width: 10%;
+    margin-left: 20px;
+}
+
+.mailto {
+    width: 10%;
+    color: white;
+    text-shadow: 0 0 3px black;
+}
+
+.mailto:hover {
+    text-decoration: none;
+    color: #eaba00;
+}
+
+.no_margin {
+    margin-bottom: 0px;
+}
+
+/* --- navbar --- */
+.navbar {
+    margin-bottom: 0px;
+}
+
+/* --- main content --- */
+main {
+    padding-top: 20px;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #eaba00;
+}
+
+/*Home*/
+#more1, #more2 {
+    display: none;
+}
+
+.home_main {
+    background-image: url(img/tgif-img1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.panel-title {
+    font-size: 22px;
+}
+
+
+/*Congress 113 / Attendance / Party Loalty*/
+td {
+    animation-name: appear;
+    animation-duration: 0.5s;
+}
+
+@keyframes appear {
+    0% {
+        transform: scaleY(0)
+    }
+
+    100% {
+        transform: scaleY(1)
+    }
+}
+
+.top-border {
+    border-top-style: solid;
+    border-top-color: grey;
+    border-top-width: thin;
+    padding-top: 10px;
+    margin-top: 20px;
+}
+
+.noMember {
+    background-color: rgba(234, 186, 0, 0.5);
+}
+
+/*loader*/
+#load {
+    display: none;
+}
+
+.lds-facebook {
+    display: block;
+    position: relative;
+    width: 64px;
+    height: 64px;
+    margin: auto;
+}
+
+.lds-facebook div {
+    display: inline-block;
+    position: absolute;
+    left: 6px;
+    width: 13px;
+    background: #cef;
+    animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+
+.lds-facebook div:nth-child(1) {
+    left: 6px;
+    animation-delay: -0.24s;
+}
+
+.lds-facebook div:nth-child(2) {
+    left: 26px;
+    animation-delay: -0.12s;
+}
+
+.lds-facebook div:nth-child(3) {
+    left: 45px;
+    animation-delay: 0;
+}
+
+@keyframes lds-facebook {
+    0% {
+        top: 6px;
+        height: 51px;
+    }
+
+    50%,
+    100% {
+        top: 19px;
+        height: 26px;
+    }
+}

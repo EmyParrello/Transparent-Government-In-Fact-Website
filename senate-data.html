@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TGIF - Senate</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <header class="container-fluid row">
+        <img src="styles/img/tgif-logo.png" class="logo img-circle">
+        <h1 class="">Transparent Government in Fact</h1>
+        <a class="mailto" href="mailto:info@tgif.net">
+            <p class="no_margin"><span class="glyphicon glyphicon-envelope"></span> info@tgif.net</p>
+        </a>
+    </header>
+    <nav class="navbar navbar-default container-fluid">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li class="active dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Congress 113</a>
+                    <ul class="dropdown-menu">
+                        <li class="active"><a href="senate-data.html">Senate</a></li>
+                        <li><a href="house-data.html">House</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Attendance</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="senate-attendance.html">Senate</a></li>
+                        <li><a href="house-attendance.html">House</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Party Loyalty</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="senate-party-loyalty.html">Senate</a></li>
+                        <li><a href="house-party-loyalty.html">House</a></li>
+                    </ul>
+                </li>
+            </ul>
+    </nav>
+    <main class="container text-justify">
+        <div class="lds-facebook">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div id="load">
+            <div>
+                <h3>Senators</h3>
+                <p>First convened in 1789, the composition and powers of the Senate are established in Article One of the U.S. Constitution. Each state is represented by two senators, regardless of population, who serve staggered six-year terms. The Senate has several exclusive powers not granted to the House, including consenting to treaties as a precondition to their ratification and consenting to or confirming appointments of Cabinet secretaries, federal judges, other federal executive officials, military officers, regulatory officials, ambassadors, and other federal uniformed officers, as well as trial of federal officials impeached by the House.</p>
+            </div>
+            <div class="container row top-border">
+                <div class="col-lg-10">
+                    <label>Filter by Party:</label>
+                    <label>
+                        <input type="checkbox" name="partyFilter" value="R"> Republican
+                    </label>
+                    <label>
+                        <input type="checkbox" name="partyFilter" value="D"> Democrat
+                    </label>
+                    <label>
+                        <input type="checkbox" name="partyFilter" value="I"> Independent
+                    </label>
+                </div>
+                <div class="col-lg-2">
+                    <label>Filter by State:
+                        <select id="stateFilter">
+                            <option value="All">All</option>
+                        </select>
+                    </label>
+                </div>
+            </div>
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">Senator</th>
+                        <th scope="col">Party</th>
+                        <th scope="col">State</th>
+                        <th scope="col">Years in Office</th>
+                        <th scope="col">% Votes w/ Party</th>
+                    </tr>
+                </thead>
+                <tbody id="members-data"></tbody>
+            </table>
+        </div>
+    </main>
+    <footer class="panel-footer container-fluid">
+        <p class="text-center">&copy; 2016 TGIF | All Rights Reserved</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--    <script src="pro-congress-113-senate.js"></script>-->
+    <script src="main.js"></script>
+</body>
+
+</html>
