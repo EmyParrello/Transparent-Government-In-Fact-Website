@@ -7,6 +7,7 @@ header {
     height: 120px;
     justify-content: flex-start;
     background-image: linear-gradient(to left, rgba(0, 142, 165, 0.75), rgba(0, 142, 165, 0.5), rgba(0, 142, 165, 0.25), rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25));
+    */
 }
 
 h1 {
@@ -35,10 +36,12 @@ h1 {
     margin-bottom: 0px;
 }
 
+
 /* --- navbar --- */
 .navbar {
     margin-bottom: 0px;
 }
+
 
 /* --- main content --- */
 main {
@@ -50,11 +53,8 @@ a:hover {
     color: #eaba00;
 }
 
-/*Home*/
-#more1, #more2 {
-    display: none;
-}
 
+/*Home*/
 .home_main {
     background-image: url(img/tgif-img1.jpg);
     background-repeat: no-repeat;
@@ -95,9 +95,11 @@ td {
     background-color: rgba(234, 186, 0, 0.5);
 }
 
+
 /*loader*/
 #load {
     display: none;
+    /*only for JavaScript, not VUE*/
 }
 
 .lds-facebook {
